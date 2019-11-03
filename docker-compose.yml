@@ -1,0 +1,11 @@
+version: '2'
+services:
+  website:
+    container_name: myphp
+    image: phpimg
+    build:
+      context: ./
+    volumes:
+      - /Users/macbookpro/Works/phpdocker/src:/var/www/html/
+    ports:
+      - 8200:80
